@@ -44,6 +44,7 @@ body {
 }
 /* navbar section */
 nav {
+    width: auto;
     position: sticky;
     top: 0;
     left: 0;
@@ -97,8 +98,9 @@ nav ul li {
     margin: auto;
 }
 .hero img {
-    height: 37.5rem;
-    width: 37.5rem;
+    height: 20.5rem;
+    width: 20.5rem;
+    margin: 20px
 }
 
 .bio {
@@ -121,22 +123,28 @@ nav ul li {
 /* projects section*/
 .projects {
     background-color: var(--bg-color);
-    padding: 32px 0;
+    padding: 15px;
     margin-top: 2rem;
+    width: auto;
+    justify-content: space-evenly;
 }
 
 .project-pic {
-    width: 65%;
-    height: 60%;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
 }
 
 .projects-container {
-    display: flex;
+    display: grid;
+    grid-template: auto / auto auto auto;
+    float: left;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
+
 .project-container p {
-    padding: 0.4rem;
+    padding: 0.5rem;
 }
 
 .project-title {
@@ -149,8 +157,56 @@ nav ul li {
 
 .project-card {
     background-color: #fff;
-    border-radius: 11px;
+    border-radius: 12px;
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
+    height: 400px;
+    overflow: auto;
+}
+/* contact section */
+.contact {
+    margin-top: 2rem;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: var(--bottom-margin-2);
+}
+
+.contact-form-container {
+    max-width: 40.75rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+}
+.contact-form-container label {
+    line-height: 2.7em;
+    font-weight: var(--bold-font);
+    color: var(--primary-color);
+}
+
+.contact-form-container textarea {
+    min-height: 6.25rem;
+    font-size: 14px;
+}
+
+.contact-form-container .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: 2px outset var(--primary-color);
+    font-size: 0.875rem;
+    outline: none;
+}
+.github-link:hover{
+    cursor: pointer;
+}
+.github-container{
+   display: flex;
+}
+.github-container a{
+
 }
