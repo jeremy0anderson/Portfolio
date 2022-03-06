@@ -6,7 +6,77 @@
     <link rel="stylesheet" href="/public/assets/css/layout.css"/>
 </head>
 <body>
+<nav>
+    <h1>Jeremy Anderson</h1>
+    <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav>
+<section class="hero" id="about">
+    <img src="assets/images/wfh_1.svg" alt="jane-doe" loading="lazy" class="hero-img"/>
+    <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+            About me text area
+        </p>
+    </div>
+</section>
+code snippet below:
 
+<section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+        <div class="project-container project-card">
+            <img
+                    src="https://via.placeholder.com/100"                    alt="expense-tracker"
+                    loading="lazy"
+                    class="project-pic"
+            />
+            <h3 class="project-title">Expense Tracker</h3>
+            <p class="project-details">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                ratione vel inventore labore commodi modi quos culpa aut saepe!
+                Alias!
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+            <img
+                    src="https://via.placeholder.com/100"                    alt="netflic-clone"
+                    loading="lazy"
+                    class="project-pic"
+            />
+            <h3 class="project-title">Netflix Clone</h3>
+            <p class="project-details">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                ratione vel inventore labore commodi modi quos culpa aut saepe!
+                Alias!
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+            <img
+                    src="https://via.placeholder.com/100"
+                    alt="greeny-earth"
+                    loading="lazy"
+                    class="project-pic"
+            />
+            <h3 class="project-title">Greeny Earth</h3>
+            <p class="project-details">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                ratione vel inventore labore commodi modi quos culpa aut saepe!
+                Alias!
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+    </div>
+</section>
 </body>
 <script src="public/assets/js/index.js"></script>
 </html>
