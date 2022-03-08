@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Static portfolio site written in plain js, css, and html.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//jeremy0anderson/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
