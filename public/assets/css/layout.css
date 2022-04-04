@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
 /* Variables */
 :root {
@@ -7,7 +6,7 @@
     --bold-font: 700;
     --bolder-font: 900;
     --bg-color: #fcfcfc;
-    --primary-color: #4756df;
+    --primary-color: rgba(246, 255, 255, 0.82);
     --secondary-color: #ff7235;
     --primary-shadow: #8b8eaf;
     --secondary-shadow: #a17a69;
@@ -53,7 +52,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 

@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="/public/assets/css/layout.css"/>
 </head>
 <body>
-<nav>
-    <h1>Jeremy Anderson</h1>
-    <ul class="navigation">
+<nav style="background: url('/public/assets/images/navbar-background.jpg')">
+    <h1 style="background: transparent;">Jeremy Anderson</h1>
+    <ul class="navigation" style="background: transparent">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -25,7 +25,6 @@
         <p class="bio-text">
             About me text area
         </p>
-        <img alt="github-link" class="github-link" role="link" src="/public/assets/images/GitHub-Mark.svg" style="height: 64px; width: 64px;" onclick="window.location.replace('https://github.com/jeremy0anderson')"/>
     </div>
 </section>
 <section class="projects" id="projects">
@@ -69,50 +68,7 @@
 <section class="contact" id="contact">
     <h2>Get In Touch With Me</h2>
     <div class="contact-form-container">
-        <div class="contact-form">
-            <form action="https://formspree.io/f/xyylngw" method="POST">
-                <div class="form-control">
-                    <label for="name">Name</label>
-                    <input
-                            type="text"
-                            id="name"
-                            name="sender-name"
-                            placeholder="Enter Your Name"
-                            class="input-field"
-                            required
-                    />
-                </div>
-                <div class="form-control">
-                    <label for="email">Email</label>
-                    <input
-                            type="email"
-                            id="email"
-                            name="sender-email"
-                            placeholder="Enter Your Email"
-                            class="input-field"
-                            required
-                    />
-                </div>
-                <div class="form-control">
-                    <label for="message">Message</label>
-                    <textarea
-                            id="message"
-                            cols="60"
-                            rows="10"
-                            placeholder="Enter Your Message"
-                            name="message"
-                            class="input-field"
-                            required
-                    ></textarea>
-                </div>
-                <input
-                        type="submit"
-                        value="Send"
-                        id="submit-btn"
-                        class="submit-btn"
-                />
-            </form>
-        </div>
+        <img alt="github-link" class="github-link" role="link" src="/public/assets/images/GitHub-Mark.svg" style="height: 64px; width: 64px;" onclick="window.location.replace('https://github.com/jeremy0anderson')"/>
     </div>
 </section>
 </body>
