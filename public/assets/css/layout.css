@@ -77,7 +77,12 @@ nav ul li {
     font-weight: var(--bold-font);
 }
 /* end nav */
-
+a{
+    color: coral;
+}
+a:visited{
+    color: orangered;
+}
 .burger-menu {
     color: var(--primary-color);
     font-size: 2rem;
@@ -135,7 +140,7 @@ nav ul li {
 
 .projects-container {
     display: grid;
-    grid-template: auto / auto auto auto;
+    grid-template: auto auto / auto auto;
     float: left;
     align-items: center;
     justify-content: space-evenly;
@@ -152,6 +157,13 @@ nav ul li {
 .project-details {
     margin-bottom: var(--bottom-margin);
 }
+.details-list{
+    list-style-type: none;
+
+}
+.details-list li{
+    margin-bottom: 10px;
+}
 
 .project-card {
     background-color: #fff;
@@ -161,6 +173,8 @@ nav ul li {
     margin: 10px;
     height: 400px;
     overflow: auto;
+    text-overflow: fade;
+    position: sticky;
 }
 /* contact section */
 .contact {
