@@ -25,6 +25,13 @@ html {
     box-sizing: border-box;
 }
 
+.sections-container{
+    display: grid;
+    grid-template: auto auto auto / auto;
+    justify-content: center;
+}
+
+
 ul {
     list-style-type: none;
 }
@@ -54,7 +61,26 @@ nav {
     padding: 1.5rem 3.5rem;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
+.is-active{
 
+}
+#close-demo{
+    display: flex;
+    float: right;
+}
+#quiz-demo{
+    padding: 10px;
+    margin-inline: 20px;
+}
+#quiz-gif{
+    width: 370px;
+    height: 200px;
+    margin: 10px;
+}
+nav {
+    position: fixed;
+    width: 100%;
+}
 nav h1 {
     color: var(--primary-color);
 }
@@ -77,10 +103,15 @@ nav ul li {
     font-weight: var(--bold-font);
 }
 /* end nav */
-a{
+.project-card a{
     color: coral;
 }
-a:visited{
+.checkout{
+    margin: 10px 20px;
+}
+
+
+.project-link:visited{
     color: orangered;
 }
 .burger-menu {
@@ -102,9 +133,10 @@ a:visited{
 }
 .hero img {
     height: 20.5rem;
-    width: 20.5rem;
+    width: auto;
     margin: 20px
 }
+
 
 .bio {
     width: 25rem;
@@ -133,21 +165,23 @@ a:visited{
 }
 
 .project-pic {
-    width: 150px;
-    height: 150px;
-    margin: 5px;
+    float: left;
+    width: 250px;
+    height: 175px;
+    margin: 0 20px;
+    box-shadow: 2px 2px 2px 2px lightgrey;
+    text-wrap: normal;
 }
 
 .projects-container {
     display: grid;
-    grid-template: auto auto / auto auto;
-    float: left;
-    align-items: center;
+    grid-template: auto auto  / 50% 50%;
     justify-content: space-evenly;
 }
 
+
 .project-container p {
-    padding: 0.5rem;
+    padding: 1.5rem;
 }
 
 .project-title {
@@ -168,10 +202,10 @@ a:visited{
 .project-card {
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 3px 10px var(--primary-shadow);
+    box-shadow: 0 3px 10px var(--secondary-shadow);
     padding: 20px;
     margin: 10px;
-    height: 400px;
+    height: auto;
     overflow: auto;
     text-overflow: fade;
     position: sticky;
@@ -179,6 +213,7 @@ a:visited{
 /* contact section */
 .contact {
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .contact h2 {

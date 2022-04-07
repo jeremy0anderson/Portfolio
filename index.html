@@ -6,72 +6,85 @@
     <link rel="stylesheet" href="/public/assets/css/layout.css"/>
 </head>
 <body>
-<nav style="background: url('/public/assets/images/navbar-background.jpg')">
-    <h1 style="background: transparent;">Jeremy Anderson</h1>
-    <ul class="navigation" style="background: transparent">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
-    <button class="burger-menu" id="burger-menu">
-        <i class="bars" name="menu-outline">i</i>
-    </button>
-</nav>
-<section class="hero" id="about">
-    <img src="https://via.placeholder.com/250x250" alt="jane-doe" loading="lazy" class="hero-img"/>
-    <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
-        <p class="bio-text">
-            About me text area
-        </p>
-    </div>
+<section class="nav-container">
+    <nav style="background: url('/public/assets/images/navbar-background.jpg')">
+        <h1 style="background: transparent;">Jeremy Anderson</h1>
+        <ul class="navigation" style="background: transparent">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <i class="bars" name="menu-outline">i</i>
+        </button>
+    </nav>
 </section>
-<section class="projects" id="projects">
-    <h2 class="projects-title">Projects</h2>
-    <div class="projects-container">
-        <div class="project-container project-card">
-            <img src="https://via.placeholder.com/200" alt="expense-tracker" loading="lazy" class="project-pic"/>
-            <h3 class="project-title">Quiz</h3>
-            <p class="project-details">
-                Timed quiz made with HTML, CSS, and JavaScript
+<div class="sections-container">
+    <section class="hero" id="about" >
+        <img src="./public/assets/images/pf.jpeg" alt="jane-doe" loading="lazy" class="hero-img"/>
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-title">About Me</h2>
+            <p class="bio-text">
+                About me text area
             </p>
-            <a href="https://" target="_blank" class="project-link">Check it Out</a>
         </div>
-        <div class="project-container project-card">
-            <img src="https://via.placeholder.com/100" alt="netflic-clone"loading="lazy" class="project-pic"/>
-            <h3 class="project-title">Team Profile Generator</h3>
-            <p class="project-details">
-                A command line app that creates an HTML page that displays a roster of employees, each placed on a minimally styled, evenly spaced card.
-            </p>
-            <a href="#" target="_blank" class="project-link">Check it Out</a>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <input type="image" src="./public/assets/images/js-quiz.png" alt="expense-tracker" class="project-pic" id="quiz-demo-open"/>
+                <h3 class="project-title">Quiz</h3>
+                <hr>
+                <p class="project-details">
+                    Timed quiz made with HTML, CSS, and JavaScript
+                </p>
+                <a href="https://" target="_blank" class="project-link checkout">Check it Out</a>
+                <h3 style="font-size:x-small; margin-top: 5px;" class="checkout">(or click on the image for quick demo)</h3>
+            </div>
+            <dialog class="demo-dialog" id="quiz-demo">
+                <input type="image" src="./public/assets/images/pngfind.com-christian-cross-png-2532502.png" style="width: 10px; height: 10px;" alt="dmo" id="close-demo"/>
+                <img src="./public/assets/images/js-quiz.gif" alt="quiz-demo" id="quiz-gif"/>
+            </dialog>
+            <div class="project-container project-card">
+                <img src="./public/assets/images/team-genereator.png" alt="netflic-clone"loading="lazy" class="project-pic"/>
+                <h3 class="project-title">Team Profile Generator</h3>
+                <hr>
+                <p class="project-details">
+                    A command line app that creates an HTML page that displays a roster of employees, each placed on a minimally styled, evenly spaced card.
+                </p>
+                <a href="#" target="_blank" class="project-link checkout">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="./public/assets/images/notes.png" alt="greeny-earth" loading="lazy" class="project-pic"/>
+                <h3 class="project-title">Notes </h3>
+                <hr>
+                <p class="project-details">
+                   Notes app created with <a href="https://expressjs.com">Express.js</a>
+                </p>
+                <a href="#" target="_blank" class="project-link checkout">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="./public/assets/images/img.png" alt="netflic-clone"loading="lazy" class="project-pic"/>
+                <h3 class="project-title">Assassination</h3>
+                <hr>
+                <ul class="project-details details-list">
+                    <li>A multiplayer game deployed on heroku and made with <a href="https://expressjs.com">Express.js</a>.</li>
+                    <br>
+                    <li>Features user management (login/signup) with a MySQL database & session/cookies as user authentication</li>
+                </ul>
+                <a href="https://assassination-multiplayer.herokuapp.com/" target="_blank" class="project-link checkout">Check it Out</a>
+            </div>
         </div>
-        <div class="project-container project-card">
-            <img src="https://via.placeholder.com/200" alt="greeny-earth" loading="lazy" class="project-pic"/>
-            <h3 class="project-title">Notes </h3>
-            <p class="project-details">
-               Notes app created with <a href="https://express.js">Express.js</a>
-            </p>
-            <a href="#" target="_blank" class="project-link">Check it Out</a>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+            <img alt="github-link" class="github-link" role="link" src="/public/assets/images/GitHub-Mark.svg" style="height: 64px; width: 64px;" onclick="window.location.replace('https://github.com/jeremy0anderson')"/>
         </div>
-        <div class="project-container project-card">
-            <img src="./public/assets/images/img.png" alt="netflic-clone"loading="lazy" class="project-pic"/>
-            <h3 class="project-title">Assassination</h3>
-            <ul class="project-details details-list">
-                <li>A multiplayer game deployed on heroku and made with express.</li>
-                <br>
-                <li>Features user management (login/signup) with a MySQL database & session/cookies as user authentication</li>
-            </ul>
-            <a href="https://assassination-multiplayer.herokuapp.com/" target="_blank" class="project-link">Check it Out</a>
-        </div>
-    </div>
-</section>
-<section class="contact" id="contact">
-    <h2>Get In Touch With Me</h2>
-    <div class="contact-form-container">
-        <img alt="github-link" class="github-link" role="link" src="/public/assets/images/GitHub-Mark.svg" style="height: 64px; width: 64px;" onclick="window.location.replace('https://github.com/jeremy0anderson')"/>
-    </div>
-</section>
+    </section>
+</div>
 </body>
-<script src="public/assets/js/index.js"></script>
+<script src="./public/assets/js/index.js"></script>
 </html>
